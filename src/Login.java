@@ -8,7 +8,7 @@ public class Login extends Toko {
         else{
             status = "Guest";
         }
-        System.out.println("Status : " + status);
+        System.out.println("           Status   : " + status);
     }
 
     public void alert(){

@@ -29,9 +29,10 @@ public class Toko {
         return qty;
     }
     public void showLogin(){
-        System.out.println("Username : " + getUsername());
-        System.out.println("Password : " + getPassword());
+        System.out.println("           Username : " + getUsername());
+        System.out.println("           Password : " + getPassword());
     }
+
     public void tampilBarang(String id, String nama){
         System.out.print(id+" | ");
         System.out.println(nama +" | ");
@@ -45,7 +46,8 @@ public class Toko {
         System.out.println(stok +" | ");
     }
     public void struk(){
-        System.out.println("------------Struk Pembelian--------------");
+        System.out.println();
+        System.out.println("---------------------Struk Pembelian----------------------");
         System.out.println("Nama Barang    | Harga  |Qty| Total  | Bayar   | Kembalian");
     }
     public void pembelian(String nama_barang,double harga,Integer qty,double bayar){
@@ -55,6 +57,7 @@ public class Toko {
         total = qty*harga;
         System.out.print(total+" | ");
         System.out.print(bayar+" | ");
-        System.out.println(bayar-total);
+        kembalian = bayar-total;
+        System.out.println(kembalian);
     }
 }

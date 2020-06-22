@@ -1,7 +1,7 @@
 public class Main {
     public static void main(String[] args){
 
-        System.out.println("---------Login---------");
+        System.out.println("----------------Login----------------");
 
         Toko toko = new Toko();
         toko.setUsername("Admin");
@@ -12,7 +12,6 @@ public class Main {
         login.alert();
 
         Gudang gudang = new Gudang();
-
         gudang.setId_barang("M1");
         gudang.setNama_barang("Indomie Goreng");
         gudang.setHarga((double) 2500);
