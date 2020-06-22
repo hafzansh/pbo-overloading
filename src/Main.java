@@ -10,9 +10,9 @@ public class Main {
 
         Login login = new Login(toko.getUsername(),toko.getPassword());
         login.alert();
-        
 
         Gudang gudang = new Gudang();
+
         gudang.setId_barang("M1");
         gudang.setNama_barang("Indomie Goreng");
         gudang.setHarga((double) 2500);
@@ -25,5 +25,10 @@ public class Main {
         toko.tampilBarang(gudang.getId_barang(),gudang.getHarga());
         barang.id_stok();
         toko.tampilBarang(gudang.getId_barang(),gudang.getStok());
+
+        toko.struk();
+        toko.setQty(3);
+        toko.setBayar(10000);
+        toko.pembelian(gudang.getNama_barang(),gudang.getHarga(),toko.getQty(),toko.getBayar());
     }
 }
